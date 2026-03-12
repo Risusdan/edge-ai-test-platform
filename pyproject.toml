@@ -1,0 +1,22 @@
+[project]
+name = "edge-ai-test-platform"
+version = "0.1.0"
+description = "Industrial-grade Edge AI end-to-end test platform"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.135.1",
+    "onnxruntime>=1.24.3",
+    "pillow>=12.1.1",
+    "uvicorn>=0.41.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.0.2",
+    "pytest-html>=4.2.0",
+]
