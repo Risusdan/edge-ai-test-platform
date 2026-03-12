@@ -14,7 +14,7 @@ Explain the underlying concepts behind what the user just encountered, going one
 3. Explain using this structure:
    - **What it is** — one-sentence definition
    - **Why it exists** — what problem does it solve? What was life like before it?
-   - **How it works** — simplified mental model (analogy encouraged)
+   - **How it works** — simplified mental model (analogy encouraged); use Mermaid diagrams where they help visualize flows or architecture
    - **In our project** — connect back to how it's used here
    - **Going further** (optional) — one link or keyword for self-study if they want even more depth
 

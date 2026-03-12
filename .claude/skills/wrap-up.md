@@ -13,7 +13,7 @@ Summarize the current micro-step into a clean learning note saved to `notes/`.
 2. Draft a note with this structure:
    - **Title:** `a1a-project-init.md` (match the micro-step name)
    - **What I did** — bullet list of actions taken
-   - **Key concepts** — explain each new concept in plain language (assume beginner)
+   - **Key concepts** — explain each new concept in plain language (assume beginner); use Mermaid diagrams where they help visualize relationships or flows
    - **Commands learned** — table of commands used and what they do
    - **Gotchas** — anything surprising or confusing encountered
    - **Questions for later** — things worth revisiting as knowledge grows

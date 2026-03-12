@@ -61,3 +61,7 @@ Source plan: `./Edge-AI-Test-Platform-Plan.md`
 - Keep it simple — no over-engineering
 - Comments where logic isn't obvious
 - Follow standard Python conventions (PEP 8)
+
+## Diagrams
+
+- Use Mermaid syntax for diagrams in notes and docs (renders natively in GitHub and Obsidian)
