@@ -61,6 +61,23 @@ Think of it like a vending machine:
 - Button B2 (`/predict`) → gives you a prediction result
 - You also need to say *how* you're pressing (GET = "give me info", POST = "here's data, process it")
 
+### What is `__init__.py`?
+
+A special file that tells Python "this folder is a package you can import from." Without it, Python doesn't know if a folder is just a random directory or actual code. It's like a shop sign — without a sign, people don't know there's a shop inside.
+
+```mermaid
+graph TD
+    A["import inference_service.app"] --> B{"Does inference_service/ have __init__.py?"}
+    B -->|Yes| C["Load __init__.py first"]
+    C --> D["Then load app.py"]
+    D --> E["✅ Import successful"]
+    B -->|No| F["❌ ModuleNotFoundError"]
+```
+
+Our `__init__.py` is empty — it just says "yes, this is a package" and nothing more. It *can* contain code (shared config, convenience imports), but doesn't have to.
+
+This is why uvicorn can find `inference_service.app:app`. Without `__init__.py`, that path wouldn't resolve.
+
 ### What is an HTTP GET request?
 
 The most basic type of web request — "give me this resource." When you type a URL in a browser or use `curl`, you're making a GET request. Other types exist (POST, PUT, DELETE) — we'll use POST later for `/predict`.
